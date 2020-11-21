@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --color-key: #d6001c;
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <!-- Вводная часть  ==========-->
+
+    <header class="caption">
+        <h1>HTML и CSS</h1>
+        <p>Леонид Феськов</p>
+    </header>
+
+    <section class="slide">
+        <h2>Обо мне</h2>
+        <ul>
+            <li>Леонид Феськов</li>
+            <li>Старший фронтенд разработчик</li>
+            <li>Занимаюсь web-разработкой с 2011 года</li>
+        </ul>
+        <img src="pictures/portfolio.png" width="100%" />
+    </section>
+
+    <section class="slide">
+        <img class="place center" src="pictures/logo.svg" width="100" />
+    </section>
+
+    <section class="slide">
+        <h2>План <span class="custom-subtitle">(он у нас есть и мы будем его придерживаться)</span></h2>
+        <ol class="custom-text-small">
+            <li class="next">
+                Лекция – часть 1
+                <ul>
+                    <li>HTML</li>
+                    <li>СSS</li>
+                    <li>БЭМ</li>
+                </ul>
+            </li>
+            <li class="next">
+                Лекция – часть 2
+                <ul>
+                    <li>CSS-свойства</li>
+                    <li>Адаптивная верстка</li>
+                    <li>CSS-препроцессоры</li>
+                </ul>
+            </li>
+            <li class="next">Практическое занятие</li>
+            <li class="next">Домашнее задание</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Верстка web-страниц</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; font-size: 50px; width: 80%;">
+            <img src="pictures/redactors.png" width="240"/>
+            ➡️
+            <img src="pictures/html_css_js.png" width="240" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Это все HTML + CSS</h2>
+        <ul>
+            <li><a href="https://codepen.io/thebabydino/pen/MeeqLB" target="_blank">Кубик Рубика</a></li>
+            <li><a href="https://a.singlediv.com/" target="_blank">A Single Div</a></li>
+            <li><a href="https://codepen.io/donovanh/pen/pJzwEw" target="_blank">Star Wars</a></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Почему верстка важна</h2>
+        <ul>
+            <li class="next">Это то, что увидят пользователи</li>
+            <li class="next">Это основа интерфейсов</li>
+            <li class="next">Это то, с чем будете работать вы и ваши коллеги</li>
+        </ul>
+    </section>
+
+    <!-- HTML  ==========-->
+
+    <section class="slide">
+        <h2 class="shout">HTML</h2>
+    </section>
+
+    <section class="slide grid">
+        <h2>HTML</h2>
+        <p class="note">HyperText Markup Language</p>
+        <p>— стандартизированный <strong>язык разметки</strong> документов, который определяет, как и какие элементы должны располагаться на веб-странице.</p>
+        <p>был разработан британским учёным Тимом Бернерсом-Ли приблизительно в 1986—1991 годах</p>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="ZEOexJE">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>HTML дескриптор (тег)</h2>
+        <img src="pictures/anatomy-html-element.png" alt="Анатомия HTML дескриптора" />
+    </section>
+
+    <section class="slide">
+        <div class="codepen"
+             data-height="400"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="XWKZgbj">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <a href="https://webref.ru/html" target="_blank">Список HTML-тегов</a>
+    </section>
+
+    <section class="slide">
+        <h2>Проверка кода на валидность</h2>
+        <ul>
+            <li>Валидатор HTML – <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></li>
+            <li>Плагин в IDE, например W3C Validators</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Атрибуты</h2>
+        <p>– позволяют изменять свойства и поведение элемента, для которого они заданы</p>
+        <ul class="next">
+            <li>Обязательные</li>
+            <li>Необязательные</li>
+            <li>Пользовательские</li>
+        </ul>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="OJXgzzd">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Схема работы браузера</h2>
+        <img class="next" src="pictures/DOM.png" width="100%" alt="Схема работы браузера" />
+    </section>
+
+    <section class="slide">
+        <h2>DOM <span class="custom-subtitle">(Document Object Model)</span></h2>
+        <img src="pictures/DOM_tree.png" width="100%" alt="DOM tree" />
+    </section>
+
+    <section class="slide">
+        <h2>Инспектор HTML</h2>
+        <ul>
+            <li>Правой кнопкой ➡️ Inspect Element / Просмотреть код</li>
+            <li>Mac ➡️ <code>Cmd + Alt + I</code> или <code>F12</code></li>
+            <li>Windows, Ubuntu ➡️ <code>Ctrl + Shift + I</code> или <code>F12</code></li>
+        </ul>
+        <img src="pictures/inspector.png" width="100%" alt="inspector" />
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html"
+             data-slug-hash="RwRpQXV">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>HTML теги</h2>
+        <ul>
+            <li>Строчные</li>
+            <li>Блочные</li>
+            <li>Строчно-блочные</li>
+        </ul>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="jOrZLWm">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Особенности разных типов тегов</h2>
+        <ul>
+            <li>
+                Строчные теги располагаются рядом на одной строке.<br>
+                Блочные теги располагаются друг под другом.
+            </li>
+            <li>
+                Разная модель визуального форматирования CSS
+            </li>
+            <li class="next">
+                <span style="color: red;">Нельзя вкладывать блочные теги в строчные</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>HTML теги по контенту</h2>
+        <ul class="next custom-text-small">
+            <li>Метаданные</li>
+            <li>Потоковое содержимое</li>
+            <li>Секционное содержимое</li>
+            <li>Заголовочное содержимое</li>
+            <li>Текстовое содержимое</li>
+            <li>Встроенное содержимое</li>
+            <li>Интерактивное содержимое</li>
+        </ul>
+        <a class="next" href="https://html5book.ru/kontentnaya-model-html5/">https://html5book.ru/kontentnaya-model-html5/</a>
+    </section>
+
+    <section class="slide">
+        <h2>Семантика тегов</h2>
+        <div style="display: flex;">
+            <div style="width: 50%">
+                <div class="codepen"
+                     data-height="350"
+                     data-theme-id="dark"
+                     data-default-tab="result"
+                     data-slug-hash="xxOYXbx">
+                </div>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <div style="width: 50%">
+                <div class="codepen"
+                     data-height="350"
+                     data-theme-id="dark"
+                     data-default-tab="result"
+                     data-slug-hash="JjKprdo">
+                </div>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Доступность элементов</h2>
+        <div style="display: flex;">
+            <div style="width: 50%">
+                <div class="codepen"
+                     data-height="350"
+                     data-theme-id="dark"
+                     data-default-tab="result"
+                     data-slug-hash="vYKdeyx">
+                </div>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <div style="width: 50%">
+                <div class="codepen"
+                     data-height="350"
+                     data-theme-id="dark"
+                     data-default-tab="result"
+                     data-slug-hash="LYZQzZG">
+                </div>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Кроссбраузерность</h2>
+        <figure>
+            <img src="pictures/caniuse.png" width="600" alt="caniuse" />
+            <figcaption><a href="https://caniuse.com/" target="_blank">caniuse</a></figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Рекомендации по написанию HTML</h2>
+        <ul>
+            <li class="next">Продумывайте структуру HTML-кода</li>
+            <li class="next">Указывайте doctype</li>
+            <li class="next">Пишите валидный HTML-код (validator.w3.org)</li>
+            <li class="next">Следуйте стайлгайду (например Google HTML/CSS Style Guide)</li>
+            <li class="next">Используйте теги по назначению</li>
+            <li class="next">Учитывайте доступность интерфейсов</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Что почитать</h2>
+        <ul>
+            <li class="next">Про теги – <a href="https://webref.ru/html" target="_blank">webref.ru</a> или <a href="http://htmlbook.ru/html" target="_blank">htmlbook.ru</a></li>
+            <li class="next">Про HTML обо всем – <a href="https://html5book.ru/html-html5/" target="_blank">html5book.ru</a></li>
+            <li class="next">Про accessibility <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">Статья на MDN</a></li>
+        </ul>
+    </section>
+
+    <!-- CSS  ==========-->
+
+    <section class="slide">
+        <h2 class="shout">CSS</h2>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="MWeVYYm">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="rNLdaep">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="jOrzEry">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Разделение структуры и внешнего&nbsp;вида</h2>
+        <img class="place center" style="margin-top: 40px;" src="pictures/css_lego.png" alt="Разделение структуры и внешнего вида" width="500" />
+    </section>
+
+    <section class="slide">
+        <h2>Преимущества</h2>
+        <ul>
+            <li class="next">Простота последующего изменения дизайна</li>
+            <li class="next">Несколько дизайнов страницы с одним и тем же HTML-кодом</li>
+            <li class="next">
+                Уменьшение времени загрузки страниц сайта
+                <ul>
+                    <li>кода становится меньше</li>
+                    <li>кэширование CSS-файлов в браузере</li>
+                </ul>
+            </li>
+            <li class="next">Дополнительные возможности стилизации страниц, которых не было в HTML</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>CSS</h2>
+        <p class="note">(Cascading Style Sheets)</p>
+        <p>— язык таблиц стилей, который позволяет прикреплять стиль к структурированным документам (например, документам HTML и приложениям XML)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Синтаксис CSS-правила</h2>
+        <img src="pictures/css_rule.png" width="700" alt="Синтаксис CSS-правила" />
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="dyXmPzE">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Схема работы браузера</h2>
+        <img src="pictures/DOM_CSSOM.png" alt="DOM and CSSOM" width="100%" />
+    </section>
+
+    <section class="slide">
+        <h2>Схема работы браузера</h2>
+        <img src="pictures/render_tree.png" alt="Render tree" width="100%" />
+    </section>
+
+    <section class="slide">
+        <h2>Типы селекторов</h2>
+        <ul class="next">
+            <li>Базовые селекторы</li>
+            <li>Комбинаторы</li>
+            <li>Псевдоклассы</li>
+            <li>Псевдоэлементы</li>
+        </ul>
+    </section>
+
+    <!-- Базовые селекторы -->
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="css,result"
+             data-slug-hash="JjKLdKj">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <!-- Комбинаторы -->
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="css,result"
+             data-slug-hash="QWErLoZ">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <!-- Псевдоклассы -->
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="css,result"
+             data-slug-hash="NWrMWWO">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <!-- Псевдоэлементы -->
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="css,result"
+             data-slug-hash="VwjxweW">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Наследование</h2>
+        <div class="codepen"
+             data-height="400"
+             data-theme-id="dark"
+             data-default-tab="css,result"
+             data-slug-hash="KKMRKML">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Наследуемые стили:</h2>
+        <pre>color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space и word-spacing</pre>
+    </section>
+    <section class="slide">
+        <h2>Ненаследуемые стили:</h2>
+        <pre>background, border, display, float и clear, height и width, margin, min-max-height и -width, outline, overflow, padding, position, text-decoration, vertical-align и z-index</pre>
+    </section>
+
+    <section class="slide">
+        <h2>Каскад</h2>
+        <p>проявляется в том, как разные стили применяются к HTML-документу, и как конфликтующие правила переопределяют друг друга.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Как применяются стили</h2>
+        <ol>
+            <li class="next">Могут быть указаны для самого элемента</li>
+            <li class="next">Могут наследоваться от родительского элемента</li>
+            <li class="next">
+                К одному элементу могут применяться стили от разных селекторов
+                <ul>
+                    <li class="next">Стили, расположенные в коде ниже, переопределяют стили, расположенные выше</li>
+                    <li class="next">Учитывается специфичность селекторов</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html"
+             data-slug-hash="BazxaQO">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Расчет специфичность</h2>
+        <table>
+            <tr>
+                <th>Селектор</th>
+                <th>Специфичность</th>
+            </tr>
+            <tr>
+                <td>тег, псевдо-элемент(span, ::after)</td>
+                <td><code>0 0 0 1</code></td>
+            </tr>
+            <tr class="next">
+                <td>класс, псевдокласс, атрибут (.header, :hover)</td>
+                <td><code>0 0 1 0</code></td>
+            </tr>
+            <tr class="next">
+                <td>идентификатор (#footer)</td>
+                <td><code>0 1 0 0</code></td>
+            </tr>
+            <tr class="next">
+                <td>инлайн-стили (style="color: red;")</td>
+                <td><code>1 0 0 0</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html"
+             data-slug-hash="KKMRqNY">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>!important</h2>
+        <table>
+            <tr>
+                <th>Селектор</th>
+                <th>Специфичность</th>
+            </tr>
+            <tr>
+                <td>тег, псевдо-элемент (span, ::after)</td>
+                <td><code>0 0 0 1</code>&nbsp;&nbsp;<code>0 0 0 1</code></td>
+            </tr>
+            <tr>
+                <td>класс, псевдокласс, атрибут (.header, :hover)</td>
+                <td><code>0 0 1 0</code>&nbsp;&nbsp;<code>0 0 1 0</code></td>
+            </tr>
+            <tr>
+                <td>идентификатор (#footer)</td>
+                <td><code>0 1 0 0</code>&nbsp;&nbsp;<code>0 1 0 0</code></td>
+            </tr>
+            <tr>
+                <td>инлайн-стили (style="color: red;")</td>
+                <td><code>1 0 0 0</code>&nbsp;&nbsp;<code>1 0 0 0</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+        <code>.text #name div.red.small { ... }</code>
+        <img class="place center bottom" src="pictures/fry.png" width="500" alt="fry" />
+    </section>
+
+    <section class="slide">
+        <h2>Проблемы</h2>
+        <code>.text #name div.red.small { ... }</code>
+        <ul>
+            <li class="next">сложно понимать</li>
+            <li class="next">сложно переиспользовать</li>
+            <li class="next">сложно переопределить</li>
+            <li class="next">усложняет поиск селекторов браузерами</li>
+            <li class="next">лишние селекторы</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Решение</h2>
+        <ul>
+            <li class="next">Используйте селекторы классов</li>
+            <li class="next">Повышайте специфичность в крайнем случае</li>
+            <li class="next">БЭМ методология</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Что почитать</h2>
+        <ul>
+            <li class="next">Про отдельные свойства <a href="https://webref.ru/css" target="_blank">webref.ru/css</a></li>
+            <li class="next">Про CSS подробнее <a href="https://html5book.ru/css-css3/" target="_blank">html5book.ru</a></li>
+            <li class="next"><a href="https://ru.bem.info/methodology/" target="_blank">БЭМ</a></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Вопросы?</h2>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
