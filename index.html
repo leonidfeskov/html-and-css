@@ -590,6 +590,115 @@
         </ul>
     </section>
 
+    <!-- БЭМ =====================-->
+
+    <section class="slide">
+        <h2>БЭМ</h2>
+        <p class="note">(Блок, Элемент, Модификатор)</p>
+        <p>— компонентный подход к веб-разработке. В его основе лежит принцип разделения интерфейса на независимые блоки</p>
+        <p><a href="https://ru.bem.info/methodology/" target="_blank">ru.bem.info</a></p>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/bem_block.png" width="100%" alt="Блок" />
+    </section>
+
+    <section class="slide">
+        <h2>Блок</h2>
+        <ul>
+            <li class="next">Функционально независимый компонент страницы</li>
+            <li class="next">
+                Название – английское слово или словосочетание<br>
+                <code>.header, .logo, .main-menu</code>
+            </li>
+            <li class="next">
+                Название характеризует смысл, а не состояние<br>
+                <code class="custom-code-bad">.red-text</code><br>
+                <code class="custom-code-good">.error</code>
+            </li>
+            <li class="next">Можно вкладывать друг в друга</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/bem_element.png" width="100%" alt="Блок" />
+    </section>
+
+    <section class="slide">
+        <h2>Элемент</h2>
+        <ul>
+            <li class="next">Составная часть блока, которая не может использоваться без него</li>
+            <li class="next">
+                Название соответствует схеме<br>
+                <code>.имя-блока__имя-элемента</code>, например
+                <code>.main-menu__item</code>
+            </li>
+            <li class="next">Имя элемента характеризует смысл, а не состояние</li>
+            <li class="next">Элементы можно вкладывать друг в друга.</li>
+            <li class="next">
+                Элемент всегда часть блока, а не другого элемента<br>
+                <code class="custom-code-bad">.block__elem1__elem2</code><br>
+                <code class="custom-code-good">.block__elem1</code> и <code class="custom-code-good">.block__elem2</code>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/bem_mod.png" width="100%" alt="Блок" />
+    </section>
+
+    <section class="slide">
+        <h2>Модификатор</h2>
+        <ul>
+            <li class="next">Определяет внешний вид, состояние или поведение блока или элемента</li>
+            <li class="next">
+                Название соответствует схеме<br>
+                <code>.имя-блока_имя-модификатора</code> или <br>
+                <code>.имя-блока__имя-элемента_имя-модификатора</code><br>
+                <code>.main-menu__item_active</code>
+            <li class="next">Имя модификатора характеризует внешний вид</li>
+            <li class="next">Нельзя использовать самостоятельно</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Правила именования CSS-классов</h2>
+        <ul>
+            <li class="next">
+                Блок<br>
+                <code>.block-name</code>
+            </li>
+            <li class="next">
+                Элемент<br>
+                <code>.block-name__element-name</code>
+            </li>
+            <li class="next">
+                Модификатор<br>
+                <code>.block-name_mod-name</code><br>
+                <code>.block-name__element-name_mod-name</code>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide custom-slide-code">
+        <div class="codepen"
+             data-height="490"
+             data-theme-id="dark"
+             data-default-tab="html,result"
+             data-slug-hash="XWKPNNe">
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide">
+        <h2>Преимущества</h2>
+        <ul>
+            <li class="next">Не повышается специфичность селекторов</li>
+            <li class="next">Блоки легко переиспользовать</li>
+            <li class="next">Легко масштабировать верстку</li>
+        </ul>
+    </section>
+
     <section class="slide">
         <h2>Что почитать</h2>
         <ul>
