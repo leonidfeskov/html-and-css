@@ -26,3 +26,11 @@
 .custom-code-good {
     --color-back: #81c784;
 }
+
+.custom-emoji {
+    font-size: 40px;
+}
+
+.custom-emoji_large {
+    font-size: 100px;
+}
