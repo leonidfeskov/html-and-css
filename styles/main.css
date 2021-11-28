@@ -19,6 +19,10 @@
     color: #999;
 }
 
+.custom-subtitle_white {
+    color: #fff;
+}
+
 .custom-code-bad {
     --color-back: #e33371;
 }
