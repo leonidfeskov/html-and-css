@@ -23,9 +23,15 @@
     <section class="slide">
         <h2>Организационные моменты</h2>
         <p><span class="custom-emoji">🔇</span> Отключите микрофоны</p>
-        <p><span class="custom-emoji">❓</span> Вопросы можно задавать сразу по ходу лекции</p>
         <p><span class="custom-emoji">🔉</span> Не забывайте включать микрофон, когда задаете вопрос</p>
+        <p><span class="custom-emoji">😉</span> Включайте видео-камеры</p>
         <p><span class="custom-emoji">⏺</span> Включить запись</p>
+    </section>
+
+    <section class="slide">
+        <h2>❓Задавайте вопросы</h2>
+        <blockquote>Не бывает глупых вопросов.<br>Самый глупый вопрос – тот, который не задан.</blockquote>
+        <p style="text-align: right;">© Джейсон Стетхем</p>
     </section>
 
     <section class="slide">
@@ -34,6 +40,9 @@
             <li>Тимлид в продуктовой команде hh.ru</li>
             <li>Занимаюсь web-разработкой с 2011 года</li>
         </ul>
+        <div style="position: absolute; top: 10%; right: 10%;">
+            <img src="pictures/hh.ru.svg" width="50" height="50" />
+        </div>
         <img src="pictures/portfolio.png" width="100%" />
     </section>
 
@@ -130,8 +139,9 @@
     </section>
 
     <section class="slide">
-        <h2>Проверка кода на валидность</h2>
+        <h2>Спецификация HTML</h2>
         <ul>
+            <li>Спецификация HTML – <a href="https://html.spec.whatwg.org/multipage/" target="_blank">html.spec.whatwg.org</a></li>
             <li>Валидатор HTML – <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></li>
             <li>Плагин в IDE, например W3C Validators</li>
         </ul>
@@ -222,19 +232,19 @@
         </ul>
     </section>
 
-    <section class="slide">
-        <h2>HTML теги по контенту</h2>
-        <ul class="next custom-text-small">
-            <li>Метаданные</li>
-            <li>Потоковое содержимое</li>
-            <li>Секционное содержимое</li>
-            <li>Заголовочное содержимое</li>
-            <li>Текстовое содержимое</li>
-            <li>Встроенное содержимое</li>
-            <li>Интерактивное содержимое</li>
-        </ul>
-        <a class="next" href="https://html5book.ru/kontentnaya-model-html5/">https://html5book.ru/kontentnaya-model-html5/</a>
-    </section>
+<!--    <section class="slide">-->
+<!--        <h2>HTML теги по контенту</h2>-->
+<!--        <ul class="next custom-text-small">-->
+<!--            <li>Метаданные</li>-->
+<!--            <li>Потоковое содержимое</li>-->
+<!--            <li>Секционное содержимое</li>-->
+<!--            <li>Заголовочное содержимое</li>-->
+<!--            <li>Текстовое содержимое</li>-->
+<!--            <li>Встроенное содержимое</li>-->
+<!--            <li>Интерактивное содержимое</li>-->
+<!--        </ul>-->
+<!--        <a class="next" href="https://html5book.ru/kontentnaya-model-html5/">https://html5book.ru/kontentnaya-model-html5/</a>-->
+<!--    </section>-->
 
     <section class="slide">
         <h2>Семантика тегов</h2>
@@ -598,7 +608,12 @@
     <section class="slide">
         <h2>Решение</h2>
         <ul>
-            <li class="next">Используйте селекторы классов</li>
+            <li class="next">
+                Используйте только селекторы классов
+                <br>
+                <code>.text #name div.red.small { ... }</code> ->
+                <code>.footnote { ... }</code>
+            </li>
             <li class="next">Повышайте специфичность в крайнем случае</li>
             <li class="next">БЭМ методология</li>
         </ul>
@@ -1100,9 +1115,9 @@
         <h2 class="shout">Вопросы ❔</h2>
     </section>
 
-    <section class="slide">
-        <h2 class="shout">Feedback</h2>
-    </section>
+<!--    <section class="slide">-->
+<!--        <h2 class="shout">Feedback</h2>-->
+<!--    </section>-->
 
     <div class="progress"></div>
 
